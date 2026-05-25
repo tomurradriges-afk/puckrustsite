@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>PuckRust</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+}
+
+body{
+    background:#050816;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+    position:relative;
+    height:100vh;
+    background:url('background.jpg') center/cover no-repeat;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(to bottom, rgba(0,0,0,0.45), rgba(0,0,0,0.85));
+}
+
+/* NAVBAR */
+
+nav{
+    position:relative;
+    z-index:10;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 60px;
+}
+
+.logo{
+    width:60px;
+    height:60px;
+    border:3px solid #ff3c3c;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    font-weight:900;
+    color:white;
+    background:rgba(0,0,0,0.4);
+}
+
+.menu{
+    display:flex;
+    gap:35px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:white;
+    font-weight:700;
+    transition:0.3s;
+}
+
+.menu a:hover{
+    color:#ff3c3c;
+}
+
+/* CENTER TEXT */
+
+.hero-content{
+    position:relative;
+    z-index:5;
+    height:80%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:85px;
+    font-weight:900;
+    line-height:1.1;
+    text-transform:uppercase;
+}
+
+.hero-content p{
+    margin-top:20px;
+    color:#ff4d4d;
+    font-size:24px;
+    letter-spacing:4px;
+    text-transform:uppercase;
+}
+
+/* INFO BLOCK */
+
+.info{
+    background:#0b1020;
+    padding:80px 10%;
+}
+
+.info h2{
+    font-size:42px;
+    margin-bottom:30px;
+}
+
+.info-box{
+    background:#141c33;
+    padding:30px;
+    border-radius:15px;
+    line-height:1.8;
+    font-size:18px;
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.info-box ul{
+    margin-left:20px;
+}
+
+/* FOOTER */
+
+footer{
+    padding:30px;
+    text-align:center;
+    background:#060912;
+    color:#777;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .hero-content h1{
+        font-size:45px;
+    }
+
+    .hero-content p{
+        font-size:16px;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .menu{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<nav>
+
+    <div class="logo">PR</div>
+
+    <div class="menu">
+        <a href="#">ГЛАВНАЯ</a>
+        <a href="#">СЕРВЕР</a>
+        <a href="#">ДОНАТ</a>
+        <a href="#">КОМАНДА</a>
+    </div>
+
+</nav>
+
+<div class="hero-content">
+
+    <h1>
+        ПРИВЕТСТВУЕМ ВАС<br>
+        НА СЕРВЕРЕ<br>
+        PuckRust
+    </h1>
+
+    <p>
+        ЖЕЛАЕМ ПРИЯТНОЙ ИГРЫ И НОВЫХ ПОБЕД
+    </p>
+
+</div>
+
+</section>
+
+<!-- НИЖНИЙ БЛОК -->
+
+<section class="info">
+
+<h2>Информация о сервере</h2>
+
+<div class="info-box">
+
+<p>
+[EU] Puck Rust - NoLimit/X3/Monthly 
+</p>
+<br>
+
+<ul>
+<li>Сервер: 
+<a href="steam://connect/45.11.16.76:7044">Подключиться</a>
+</li>
+<li>Discord сервера: https://discord.gg/2nZR4Yfbtf</li>
+<li>Донат магазин</li>
+<a href="https://www.battlemetrics.com/servers/rust/39085395" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #1a1a1a; color: #ffffff; text-decoration: none; border-radius: 5px; font-weight: bold;">
+    Описание сервера на BattleMetrics
+</a> </li>
+</ul>
+
+<br>
+
+<p>
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+© 2025 PuckRust
+</footer>
+
+</body>
+</html>
